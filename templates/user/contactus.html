@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+.form-control
+{
+margin-bottom:5px;
+.txta
+{
+min-height:100px;
+}
+}
+</style>
+<div class="row contact">
+    <div class="h2 text-center"> Contact <b class="text-warning"> Us <i class="fa fa-phone"></i></b></div>
+    <p class="text-center">This page contains contact details for any queries. This page also contains google map of website location using <br>Google map API and a contact from using enquiry</p>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 bg-light mt-3" style="min-height: 400px;">
+        <div class="row">
+            <div class="col-sm-5 p-4">
+                <form method="post">
+                    {% csrf_token %}  <!---cross site reforgery--->
+                    {% if S %}
+                    <div class="alert alert-success">
+                        Thanks for enquiry....
+                    </div>
+                    {% endif %}
+                    Name <input type="text" name="name" required class="form-control" placeholder="Enter Your Name....">
+                    Mobile <input type="number" name="mobile" required class="form-control" placeholder="Enter Your Mob No.....">
+                    Email <input type="email" name="email" required class="form-control" placeholder="Enter Your Email....">
+                    Message
+                    <textarea class="form-control txta"name="msg" style="min-height:80px;" placeholder=" Enter Your Message...." required></textarea>
+                    <input type="submit" value="Save" class="btn btn-dark text-warning w-100 ">
+                </form>
+            </div>
+            <div class="col-sm-7">
+<iframe src="https://www.google.com/maps/embed?pb=!1
+m18!1m12!1m3!1d3558.1615098718576!2d80.96419201452032!3d26.898368867184075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+1!3m3!1m2!1s0x39995785d5f7f1a5%3A0xffa47f1efe103f0d!2sTechpile%20Technology%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1632680
+158973!5m2!1sen!2sin" class="w-100 h-100 p-4 " style="border:0; border-radius:5px" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+{% endblock %}

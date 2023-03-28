@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="h2 text-center pb-4">My<b class="text-warning" style="border-bottom:4px solid black"> Profile <i
+            class="fa fa-users"></i></b></div><hr class="mb-4">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <!---start card--->
+                {% if profile %}
+                {% for x in profile %}
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/{{x.ppic}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{x.name}}</h5>
+                                <p class="card-text"><b>{{x.mobile}}</b></p>
+                                <p class="card-text"><b>{{x.email}}</b></p>
+                                <p class="card-text"><b>{{x.password}}</b></p>
+                                <p class="card-text"><b>{{x.address}}</b></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+                <!---end card--->
+            </div>
+            <div class="col-sm-12">
+                <!----start form--->
+
+                <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            Name <input type="text" name="name" required class="form-control" placeholder="Enter Your Name...."><br>
+            Male &nbsp; <input type="radio" name="gender" required>&nbsp;
+            Female &nbsp; <input type="radio" name="gender" required><br>
+            <br>Mobile <input type="number" name="mobile" required class="form-control" placeholder="Enter Your Mob No.....">
+            Email Id<input type="email" name="email" required class="form-control" placeholder="Enter Your Email....">
+            Password<input type="password" name="passwd" required placeholder="Enter Your Password" class="form-control">
+            Re-Enter Password<input type="password" name="passwd" required placeholder="Enter Your Password" class="form-control">
+            Address<textarea class="form-control txta" name="address" style="min-height:80px;" placeholder=" Enter Your Message...." required></textarea><br>
+            ProfilePicture <input type="file" name="fu" required class="form-control">
+            <input type="submit" value="Sign Up" class="btn btn-dark text-warning w-100 ">
+
+        </form>
+                <!----end form--->
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+{% endblock %}

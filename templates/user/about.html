@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .list ul li
+    {
+    margin-left:45px;
+    box-sizing: border-box;
+    }
+    .list
+    {
+    background:white;
+    box-sizing: border-box;
+    }
+    .value
+    {
+    margin-left:80px;
+    box-sizing: border-box;
+    }
+    .about
+    {
+    background:white;
+
+    box-sizing: border-box;
+    }
+</style>
+<div class="row content" style="background:#eaeded;">
+    <div class="h2 text-center"> About <b class="text-warning"> Us </b></div>
+    <p class="text-center"> There are multiple purpose to choose us for your multiple purpose related to your Lenses and fashion
+        <br>Belive me you will find us best suitable</p>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 p-5 bg-light mt-5">
+        <div class="h2 text-center pb-3"><b>Introduction</b></div>
+        <p style="text-align:justify;">Fav Cart is a form of electronics commerce which allows consumers to directly buy goods or services from a seller over
+        the Internet using a web browser. Now a days of life style of the people is different. People feel unconfortable and time
+        consuming for going crowded market. So, E-Shopping is a boon as it saves lot of time.
+        Online shopping is a process where by consumers directly buy goods, services etc. from a seller without an intrmediary
+        service over the Internet. Shoppers can visit web stores from the comfort of their house and shop as by
+        sitting in front of the computer. Online stores are usually available 24 hours a day and many consumers have internet
+        access both at work and at home. So it is very convenient for them to shop Online. One of the most intresting factor about online shopping
+        , particularly during holiday season is, it alleviates the need to wait in long lines or search from a store for a particular item. Varity of goods
+        are available in online. So the researcher want to know the preference of the consumers.</p>
+    </div>
+    <div class="col-sm-1"></div><hr class="mt-5">
+    <div class="col-sm-6 list mt-4 pb-4">
+        <h2 class="ps-5 pt-5"><b>Objective</b></h2>
+        <ul class="pt-2 ps-5">
+            <li>It is time saving and energy saving.</li>
+            <li>Person can easily login to site while siting on home.</li>
+            <li>Person can buy more than one product without going anywhere.</li>
+            <li>The transaction are executednin off-line mode, hence on-line data for Shopping, Internet capture and modification is not possible.</li>
+            <li>Manage the information of internet.</li>
+            <li>Shows the information and description of the shopping.</li>
+            <li> To increase efficiency of managing the shopping.</li>
+            <li>It deals with monitoring the information and transactions of Bills.</li>
+        </ul>
+    </div>
+    <div class="col-sm-6 list mt-4 pt-5 ps-5">
+        <img src="{% static 'images/about1.png' %}" alt="...">
+    </div><hr class="mt-5">
+    <div class="col-sm-6 about mt-4 pb-5">
+        <h2 class="ps-5 pt-5"><b>Value For Money</b></h2><br/>
+        <b class="value">Not all good things in the world are expensive</b><br/>
+        <br/><p class="value">Our prices are lower than any of your local optician. Our customers can find the most attractive packages on contact lenses.</p>
+        <b class="value">No middle man.No extra cost.</b><br/>
+        <br/><p class="value">No middleman simply means no middle ground. Our products come straight from the manufacturer, hence getting rid of all extra costs and burden.</p>
+        <b class="value">One for everyone</b><br/>
+        <br/><p class="value">We have a wide variety of prices to suit all th customers. Prices range from Rs.345 to Rs. 30,000. never forget that the first frame you buy is absolutely free.</p>
+        <b class="value">Your friendly neighborhood SpaxCart</b><br/>
+        <br/><p class="value">We bring to you the SpaxCart experience alive via brick and marter stores. With over 80 retail stores across the country, we have just started this journey.</p>
+    </div>
+    <div class="col-sm-6 about mt-4" style="padding-left:80px; padding-top:100px">
+        <img src="{% static 'images/about2.png' %}" alt="...">
+    </div> <hr class="mt-5">
+</div>
+{% endblock %}

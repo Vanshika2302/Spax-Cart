@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .form-control
+    {
+    margin-top:10px;
+    }
+    .form
+    {
+    background:white;
+    margin-top:30px;
+    }
+</style>
+<div class="row contact">
+    <div class="h2 text-center"> <b>Sign Up</b> <b class="text-warning"  style="border-bottom:5px solid black;"> With Us </b></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5 form p-5">
+        <img src="{% static 'images/form1.png' %}" class="card-img-top" alt="...">
+    </div>
+    <div class="col-sm-5 form p-5 " style="padding-top:100px;">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            Name <input type="text" name="name" required class="form-control" placeholder="Enter Your Name...."><br>
+            Male &nbsp; <input type="radio" name="gender" required>&nbsp;
+            Female &nbsp; <input type="radio" name="gender" required><br>
+            <br>Mobile <input type="number" name="mobile" required class="form-control" placeholder="Enter Your Mob No.....">
+            Email Id<input type="email" name="email" required class="form-control" placeholder="Enter Your Email....">
+            Password<input type="password" name="passwd" required placeholder="Enter Your Password" class="form-control">
+            Re-Enter Password<input type="password" name="passwd" required placeholder="Enter Your Password" class="form-control">
+            Address<textarea class="form-control txta" name="address" style="min-height:80px;" placeholder=" Enter Your Message...." required></textarea><br>
+            ProfilePicture <input type="file" name="fu" required class="form-control">
+            <input type="submit" value="Sign Up" class="btn btn-dark text-warning w-100 ">
+
+        </form>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <h2 class="text-center pb-4"><b>Cart</b> <b class="text-warning" style="border-bottom:4px solid black"> Items<i class="fa fa-shopping-cart"></i></b></h2><hr>
+    <div class="col-sm-12">
+        <table class="table table-stripted">
+            <tr>
+            <th>Product Id</th>
+            <th>Product Picture</th>
+            <th>Product Name</th>
+            <th>Order Date</th>
+            <th>Description</th>
+            <th>Total Price</th>
+            <th>Discounted Price</th>
+            <th>Remove Item</th>
+            <th>Order</th>
+            <th>Cancel</th>
+            <th>Delivered</th>
+            <th>Order</th>
+            </tr>
+            {% if cart %}
+            {% for x in cart %}
+            <tr>
+                <td>{{x.1}}</td>
+                <td> <img src="/{{x.7}}" class="img-thumbnail" style="max-height-200px"></td>
+                <td>{{x.4}}</td>
+                <td>{{x.5}}</td>
+                <td>{{x.3}}</td>
+                <td><i class="btn btn-outline-danger"><s>{{x.9}}</s></i></td>
+                <td><i class="btn btn-outline-success">{{x.10}}</i></td>
+                <td>{{x.10}}</td>
+                <td><a href="/user/myorders?pid={{x.0}}" class="btn btn-danger test-light">Cancel</a></td>
+                <td>{{x.10}}</td>
+                <td>{{x.10}}</td>
+                <td><a href="#" class="btn btn-dark test-warning">Delivered</a></td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </table>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <title>SpaxCart.in</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <link href="{% static 'css/all.css' %}" rel="stylesheet"/>
+    <style>
+        .t
+        {
+        min-height:30px;
+        text-align:center;
+        padding:3px;
+        }
+        .ic
+        {
+        color:#e39b11;
+
+        height:20px;
+        width:20px;
+        padding:1px;
+        border-radius:2px;
+        }
+        .ic:hover
+        {
+        transition:all ease 1s;
+        color:black;
+        }
+        .header1
+        {
+        min-height:55px;
+        }
+        .menu
+        {
+        min-height:45px;
+        }
+        #menu ul li a
+        {
+        color:#e39b11;
+        text-align:center;
+        }
+        .newproduct
+        {
+         min-height:500px;
+         background:white;
+        }
+        .services
+        {
+        min-height:500px;
+        background:white;
+        }
+        .services2
+        {
+        min-height:200px;
+        background:white;
+        }
+        .ufooter
+        {
+        min-height:300px;
+        background:white;
+        }
+        .bfooter
+        {
+        min-height:30px;
+        background:#e65100;
+        }
+        #fev
+        {
+        color:white;
+        }
+        .m ul
+        {
+
+        box-sizing: border-box;
+        }
+        .row1 img
+        {
+        min-height:90px;
+        width:340px;
+        padding-left:100px;
+        padding-top:20px;
+
+        box-sizing: border-box;
+        }
+        .col1
+        {
+        color:white;
+        font-size:25px;
+        padding-top:25px;
+        box-sizing: border-box;
+        }
+        .text
+        {
+        color:#e39b11;
+        }
+        .outer
+        {
+        background:#eaeded;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid outer">
+    <div class="row t bg-light border-bottom pt-1">
+        <div class="col-sm-4 border-end">
+            <i class="fa fa-phone ic"></i> +91-7310252
+        </div>
+        <div class="col-sm-4 border-end">
+            Welcome to SpaxCart India Pvt. Ltd.
+        </div>
+        <div class="col-sm-4">
+            <a href="#"><i class="fab fa-facebook ic"></i></a>
+            <a href="#"><i class="fab fa-twitter ic"></i></a>
+            <a href="#"><i class="fab fa-youtube ic"></i></a>
+            <a href="#" ><i class="fab fa-instagram ic" title="Vikash Nagar, Luckhnow"></i></a>
+        </div>
+    </div>
+    <div class="row bg-dark menu sticky sticky-top">
+        <div class="col-sm-3 fs-3 pt-1 ps-5" id="fev">
+            Spax <b style="color:#e39b11;">Cart India <i class="fa fa-shopping-cart"></i></b>
+        </div>
+        <div class="col-sm-9 m">
+            <!--- start menu --->
+
+            <nav class="navbar navbar-expand-lg navbar-light ps-5 " id="menu" >
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav m">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/home">Home <i class="fa fa-home"></i></a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/user/product/">Product <i class="fab fa-product-hunt"></i></a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/user/myorders">My Order <i class="fa fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/about/">About Us <i class="fas fa-info-circle"></i></a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/user/contactus/">Contact Us <i class="fa fa-address-book"></i></a>
+           <li class="nav-item">
+               <a class="nav-link" href="/user/myprofile/">My Profile <i class="fa fa-users"></i></a>
+        </li>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/user/signup/">Signup <i class="fa fa-sign-in"></i></a>
+        </li>
+          </li>
+          {% if request.session.userid%}
+           <li class="nav-item">
+               <a class="nav-link" href="/user/logout/">Log Out</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">{{request.session.userid}}</a>
+          </li>
+          {% else %}
+           <li class="nav-item">
+               <a class="nav-link" href="/user/signin/">Signin</a>
+        </li>
+          {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <!--- End menu --->
+        </div>
+    </div>
+
+        <div class="row content" style="min-height:550px;">
+            <div class="col-sm-12 py-5">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+            <div class="row ufooter bg-dark">
+                <div class="col-sm-4">
+                    <div class="row row1"><img src="{% static 'images/ss1.png' %}" alt="..."></div>
+                    <div class="row row1"><img src="{% static 'images/ss2.png' %}" alt="..."></div>
+                    <div class="row row1"><img src="{% static 'images/ss3.png' %}" alt="..."></div>
+                </div>
+                <div class="col-sm-4 col1">
+                    <b style="border-bottom:3px solid white;">Contact</b><b> Address</b>
+                    <p class="fs-6"><br>Plot No-43, Behind HP Petrol Pump, <br>Tedhi Pulia Ring Rd, Sector 5<br> Vikash Nagar, Luckhnow, <br>Uttar Pradesh 226022 <br>
+                    <br><i class="fa fa-phone"></i> +91-73100252
+                    <br><i class="fa fa-phone"></i> +91-73095252</p>
+                </div>
+                <div class="col-sm-4 text-light fs-3 pt-4">
+                    Spax <b style="color:#e39b11;">Cart India <i class="fa fa-shopping-cart"></i></b>
+                    <br><p class="fs-6 pt-3">Under the TCPA, businesses may not send messages to consumers without
+                    their consent. Even if an individual provides has a long-standing.</p>
+                     <b style="border-bottom:3px solid white;">Stay</b><b> Connected</b>
+                    <br> <p class="px-2 fs-5"><a href="#"><i class="fab fa-facebook ic"></i></a>
+                    &nbsp;&nbsp;<a href="#"><i class="fab fa-twitter ic"></i></a>
+                    &nbsp;&nbsp;<a href="#"><i class="fab fa-youtube ic"></i></a>
+                    &nbsp;&nbsp;<a href="#" ><i class="fab fa-instagram ic" title="Vikash Nagar, Lucknow"></i></a></p>
+                </div>
+            </div>
+            <div class="row bfooter bg-black text-warning text-center py-2">
+                <div class="col-sm-6 ">
+                    Developed by Vanshika Srivastava
+                </div>
+                <div class="col-sm-6">
+                    &copy; SpaxCart India
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>
