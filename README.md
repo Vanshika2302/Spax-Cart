@@ -5,7 +5,6 @@
 ---
 ![Screenshot (917)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/610e12fc-6726-4c1f-bd46-56d7cdfff1bd)
 ![Screenshot (918)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/51bfaa32-0abb-45e5-bb09-04385cc3c73f)
-![Screenshot (920)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/f7b4af41-5350-499b-8b29-fba9f3e86c87)
 ![Screenshot (923)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/e4ac3926-f3d3-4047-8bef-7bb78af7f1ba)
 
 ## 🚀 Features
