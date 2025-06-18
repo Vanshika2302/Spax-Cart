@@ -6,11 +6,7 @@
 ![Screenshot (917)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/610e12fc-6726-4c1f-bd46-56d7cdfff1bd)
 ![Screenshot (918)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/51bfaa32-0abb-45e5-bb09-04385cc3c73f)
 ![Screenshot (920)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/f7b4af41-5350-499b-8b29-fba9f3e86c87)
-![Screenshot (921)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/27afa229-6668-49d4-8be5-e37bf67df84c)
-![Screenshot (922)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/0fb96940-e86e-45cc-aa33-d45d4ccf8945)
 ![Screenshot (923)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/e4ac3926-f3d3-4047-8bef-7bb78af7f1ba)
-![Screenshot (927)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/50ecdb61-8c58-4634-bdbc-b6f2e510789b)
-![Screenshot (928)](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/a46b7a33-2f88-4abe-90f8-e77baa7c2def)
 
 ## 🚀 Features
 
