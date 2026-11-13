@@ -50,13 +50,13 @@ python -m venv venv
 
 **3. Activate the virtual environment**
 
-For Windows:
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-For macOS/Linux:
+macOS/Linux:
 
 ```bash
 source venv/bin/activate
@@ -86,7 +86,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Open your browser and visit:
+Open your browser:
 
 http://127.0.0.1:8000/
 
@@ -101,6 +101,10 @@ http://127.0.0.1:8000/
 ### Screenshot 2
 
 ![Spax-Cart Screenshot 2](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/51bfaa32-0abb-45e5-bb09-04385cc3c73f)
+
+### Screenshot 3
+
+![Spax-Cart Screenshot 3](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/e4ac3926-f3d3-4047-8bef-7bb78af7f1ba)
 
 ---
 
