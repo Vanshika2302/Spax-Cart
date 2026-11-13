@@ -96,15 +96,15 @@ http://127.0.0.1:8000/
 
 ### Screenshot 1
 
-![Screenshot (917)]\([https://github.com/Vanshika2302/Spax-Cart/assets/104651157/610e12fc-6726-4c1f-bd46-56d7cdfff1bd]
+![Spax-Cart Screenshot 1](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/610e12fc-6726-4c1f-bd46-56d7cdfff1bd)
 
 ### Screenshot 2
 
-![Screenshot (918)]\([https://github.com/Vanshika2302/Spax-Cart/assets/104651157/51bfaa32-0abb-45e5-bb09-04385cc3c73f]
+![Spax-Cart Screenshot 2](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/51bfaa32-0abb-45e5-bb09-04385cc3c73f)
 
 ### Screenshot 3
 
-![Screenshot (923)]\([https://github.com/Vanshika2302/Spax-Cart/assets/104651157/e4ac3926-f3d3-4047-8bef-7bb78af7f1ba]
+![Spax-Cart Screenshot 3](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/e4ac3926-f3d3-4047-8bef-7bb78af7f1ba)
 
 ---
 
@@ -113,3 +113,4 @@ http://127.0.0.1:8000/
 **Vanshika Srivastava**
 
 - GitHub: [Vanshika2302](https://github.com/Vanshika2302)
+- Project: [Spax-Cart](https://github.com/Vanshika2302/spax-cart)
