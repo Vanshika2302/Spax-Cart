@@ -102,10 +102,6 @@ http://127.0.0.1:8000/
 
 ![Spax-Cart Screenshot 2](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/51bfaa32-0abb-45e5-bb09-04385cc3c73f)
 
-### Screenshot 3
-
-![Spax-Cart Screenshot 3](https://github.com/Vanshika2302/Spax-Cart/assets/104651157/e4ac3926-f3d3-4047-8bef-7bb78af7f1ba)
-
 ---
 
 ## 👩‍💻 Author
@@ -113,4 +109,3 @@ http://127.0.0.1:8000/
 **Vanshika Srivastava**
 
 - GitHub: [Vanshika2302](https://github.com/Vanshika2302)
-- Project: [Spax-Cart](https://github.com/Vanshika2302/spax-cart)
